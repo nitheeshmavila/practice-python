@@ -1,0 +1,15 @@
+video 23 | sep 1 2016
+-------------------
+
+Shallow vs deep copying
+---------------------- 
+When doing deepcopy what python is doing is all the pointed to objects are duplicated in memory and this happen recursively.
+there is a module called 'copy'
+
+But when you doing a shallow copy a new copy of the pointed to objects is not created or the pointed to object are not duplicated. by default shallow copy.(eg list())
+----------------------
+
+-->subprocess module
+-->eog
+-->pylab
+-->plotting

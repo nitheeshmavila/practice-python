@@ -1,0 +1,48 @@
+video 31 | oct 2 2016
+----------------------
+--> ipython - interactive Python
+    (interactive prompt in a browser)
+--> opencv (computer vision library)
+
+--> sqlite3
+
+--> tkinter -- GUI library
+--> Pyqt, Pygtk, wxpython all are GUI librayry
+
+-------------------
+
+--> assertions
+    ----------
+
+assert statement
+
+sanity checking in the code.
+check a condition , there is no point proceeding further if the condition is false.
+
+it is better to FAIL FAST.
+---------------------
+
+-->docstrings
+first executable statement in side a function/class.
+
+it is an atribute of that function
+
+help(function_name)
+function_name.__doc__
+
+docstring need to explain what the function do and not how it works
+
+------------------
+
+-->doctest
+
+ import doctest
+ doctest.testmode()
+
+it goes to all the function inside the source code and it check if there is usage  examples in the docstring at it actualluy invokes that function.
+
+if the output is not correct it will show those things.
+
+--> do not use doctest as a testing tool. use other modules like unittesting.
+testing is always done in isolation.
+

@@ -1,0 +1,16 @@
+video 29 | sep 21 2016
+----------------------
+--> MRO -- Left to RIght and depth first(old order for old style classes)
+--> Diamond inheritance pattern
+--> new style clasess  
+    class A(object)
+
+-->later versions of python unified types and classes( class and type unification)
+  
+--> in new style classes there is change in MRO(linearization algorithm, maybe bfs) 
+
+--> __mro__ used to get the mro order 
+    usage : classname.__mro__
+
+--> use of 'super' in new style class
+    to call methods in the super class

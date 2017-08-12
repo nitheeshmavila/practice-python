@@ -1,0 +1,54 @@
+week5-video13(9-8-2016)
+-----------------------
+-->python is already stores integers ranging from 1 to 256 when the virtual machine starts up.so when you try
+    a=1
+    b=1
+    a is b
+    True   # not False
+
+set data structure
+------------------
+-->you can create a set , using the function set with list as an argument
+-->the fundamental use of a set ds is
+    union,intersection,difference,membership testing
+    common is membership testing.
+-->there is no duplication in elements
+-->set can also be created by using {} and set('+\-*')
+ -->set is very fast in doing membership testing with O(1) constant time.
+ -->where as list perform very badly.O(n)
+-->    a|b union
+       a&b intersection
+      a-b set difference
+      a ^ b symetri difference (take union of and b and then remove common elements)
+      a in b
+-->set is mutable like dict ,list 
+--> set comprehension
+-->a={}
+    type(a)
+    dict
+
+-->
+A part of programing is ENGINEERING (eg you can quantify things)
+other parts are art,science etcC
+
+-->Get in to the real world programing , a programme should be:
+   (a) correct
+   (b) perform well cpu,memmory
+   (c) clarity
+   (d)simplicity
+   (e)ease of maintainance
+
+another way to invoke python
+-----------------------------
+eg:
+python -m timeit -s 'a=range(100)' '(-10) in a'
+
+the above is a small shell script;
+there is two python code fragement,when this shell script is executed then python vm startup the 'timeit' module is loaded and it is used for profiling python code.you can measure the time taken by a python statement,fn etc.(the idea is indipendent of the language)
+--
+  -s option indicate that the first statement 'a in range(1000)' is a setup statement and only execute once.and 
+the profiling is done only to the next statement.
+
+--> The time complexity of the 'in' operation is O(n)
+    and it uses a classical linear algorithm.
+

@@ -1,0 +1,17 @@
+video 30 | 28 sep 2016
+----------------------
+--> scopes of atributes
+    
+-->you can only access class atributes inside a class by class_name.atribute_name
+
+--> class atributes are just like global variable.
+
+--> duck typing 
+    anything which looks like a duck is a duck    Python supports it.
+ 
+
+--> exceptions
+    try and except block
+    it work by unwinding the stack
+    stack trace
+    

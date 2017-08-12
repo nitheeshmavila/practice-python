@@ -1,0 +1,57 @@
+video 17 | week 6 | aug 18 2016
+-------------------------------
+automatic memory management
+---------------------------
+-> garbage collection through reference counting 
+->reference count-- indicates the no of names that the block can be accessed.
+
+->when the reference count become 0 that means you can't access that block by any names. python then internaly call 'free' to free that memory block. it is done by the python not the programer.
+
+--> this is calles automatic memory management through RC(referce count)
+    rc is a simplest stralegy for doing automatic memory management. there are other strategy too.
+
+    ---------------------
+        char *p;
+        while(1)
+        {
+          p=malloc(1000):
+        }
+    ---------------------------
+
+      while True:
+        p=[1]*1000
+    ---------------------------
+
+The two code fragements one is a 'c' code and the other is python script.
+
+
+
+--> when you executing the c code you will leak 1kb memory in each while loop iteration. serious bug
+
+-->but the same thing in python, there is no problem here . there is no leak 
+    p=[1]*1000
+    the ref count=1
+    p=[1]*1000
+  previos ref count=0 it is freed . new ref count=1
+  no leak ,'perfectly memory safe'
+-----------------------------------------------------------------
+
+>>>a=[1,2,3]
+>>>a.append(a)
+>>>a
+[1,2,3,[...]]
+
+theese type of cyclic data structures can happen in more complex ways (indirect cyclic referece can happen in python)
+this will create problems in a RC  based memory management 
+[watch details at 44.00]
+
+in that case ref count is not coming to 0 , python can't free up that block.
+block has become garbage
+
+
+" it is essential that block containing cyclical references are freed, they can't be freed by RC .  
+  but python has some more sophisticated mechanisms built in using which such cyclical will get detected and the data structures will be freed, ultimately.
+
+ more advanced garbage collecton mechanisms in python vm
+ so dont worry about theese
+----------------------------------------------------------------------------------------------------------

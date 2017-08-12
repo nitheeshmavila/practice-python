@@ -1,0 +1,10 @@
+video5:shell 
+----------------
+unix shell
+csh,ksh,zsh..etc
+linux shell: the bash
+PATH variable 
+alias/unalias
+concept of shell variables
+sub shell
+source command

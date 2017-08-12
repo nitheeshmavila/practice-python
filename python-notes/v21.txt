@@ -1,0 +1,22 @@
+video 21 | week 8| aug 30 2016
+--------------------------------
+
+-->higher order functions- map, filter, reduce
+-->lambda creates an anonymous functions.
+-->sorted()
+    It is a powerful function. it has an argument 'key' which is a function. what the sorted() function will do is that it apply 'key' (function) to every element in the sequence and the return values from the function are compared.
+
+-->to sort a sequence of strings according to there lenght ,
+    sorted(seq,key=lambda x : len(x))
+    
+    the above statement can be simplified by
+    sorted(seq,key=len)
+--> sorted(iterable, cmp=None, key=None, reverse=False) #structure
+
+all the above are very important in functional programming.
+
+
+closure [26.00]
+-----------
+closure is heavily used in functional programming.
+

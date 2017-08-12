@@ -1,0 +1,19 @@
+video 6 | week 3 | 22 jul 2016
+------------------------------
+-->  $? (echo $?) return value from main
+
+--> 0->indicates True
+    1->indicates False
+
+--> why 0 supposed to be zero?[answer at 10.00]
+-->ifconfig
+
+--> shell is designed in such a way that
+  it is a DSL(domain specific language)
+  for process and file manipulation.
+-->shell is not optimized for doing numerical work. it is a turing complete language.
+
+-->back quate
+  enclose the command in back quate . it will be intepreted as a command
+
+--> shell if,expr etc

@@ -1,0 +1,8 @@
+video2-linuxbasic commands part2
+--------------------------------
+ls -l option(long listing format)
+file command
+ELF(extende linker format)
+libc
+static and dynamic linking
+linker dependency

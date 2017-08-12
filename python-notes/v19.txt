@@ -1,0 +1,137 @@
+video 19 | 24 aug 2016
+----------------------
+files
+-------
+'w' mode will open the mode for write. it will delete the exsisting content and write to the file
+'a' mode will open the mode for append. it will not delete the exsisting contents
+
+writelines() takes a list of lines and write it
+
+-->mention importance of 'stripping lines'
+ 
+
+
+Functions
+-----------
+--> Because python is dynamically typed it will only caught  errors at run time( that is it will not show errors in lines that are not executed but in languages like c,java etc it will show errors in all lines)
+
+-->In python everything is a reference(pointer)
+def sqr(x):
+
+then 
+
+sqr
+----
+3000
+                3000
+                ----
+                byte code of function sqr
+
+
+f=sqr
+
+    f
+   ----
+    3000
+now f is same as sqr
+
+
+-->When you call a function without () you will get the memmory address of the functions machine code
+
+--> default arguments should be at the end (extreme right )
+
+-->fun(a, *b)
+        this means b can take 0 or more arguments. all those arguments are collected and stored as a tuple in b.
+-->The order of paramets is not important when you calling function with 'named paramets'
+-->fun(a, **b)
+    this means python will collect theese named arguments and grouped in to a dict key=parametr_name  value=parameter_value
+    when you print b : it will print the  dict in b
+--> 'None' is a speacial symbol which indicate nothing,empty. If there is no return in your function it simply return None
+--> return,return()  with no arguments also return None
+
+--> when function execution hits a 'return' statement the control is given back to the caller. the statemets after the return statements in  a function are dead statement.
+
+--> def fun(a,b,c);
+        print a+b+c
+    
+    t=[1,2,3]
+    fun(*t)
+then automatically t[0] assigned to a t[1] to b and t[2] to c
+
+
+
+
+Scope
+------
+
+a = [1, 2, 3, 4]
+
+def fun(x):
+    x.append(10)
+
+fun(a)
+
+print a
+
+op:[1,2,3,4]
+# the key idea above is both a and x are pointing to same block in memory.
+
+
+a = [1, 2, 3, 4]
+
+def fun(x):
+    x[0] = 10
+
+fun(a)
+
+print a
+
+op:[10,2,3,4]
+# again same memory block
+
+a = [1, 2, 3, 4]
+
+def fun(a):
+    a = [10, 2, 3, 4]
+
+fun(a)
+
+print a
+
+op:[1,2,3,4]
+ why??
+
+                            outside of the fn
+                            
+                          a
+                        -----
+                        2000
+                                            
+                                    2000
+                                  --------
+                                   1 2 3 4
+                                  --------
+    -----------------------------------------------------------------------
+
+                        inside of the function
+                    
+            initialy
+               a
+             -----
+              2000
+                        
+           after a=[10,2,3,4]
+                                        
+                            3000
+                           ------
+                           10 2 3 4
+            a
+          -----
+          3000
+
+        that is the inner a is modified.outer a is not changed
+    -----------------------------------------------------------------------
+
+
+
+-->

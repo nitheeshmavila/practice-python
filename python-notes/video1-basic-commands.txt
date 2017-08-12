@@ -1,0 +1,11 @@
+video1-linux basics part1
+------------------------
+
+-->introduction to basic shell commands.
+-->date,cat,echo,cd,ls.. etc
+-->create a file without using an editor
+-->mkdir,rm,rmdir 
+-->rm -rf 
+-->standard input output redirection
+-->root directory /
+-->macos kernal,free bsd,open bsd,net bsd

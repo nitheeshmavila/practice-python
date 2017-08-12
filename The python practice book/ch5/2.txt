@@ -1,0 +1,7 @@
+penBSD is a Unix-like computer operating system
+ descended from Berkeley Software Distribution (BSD),
+ a Research Unix derivative developed at the University of California, Berkeley.
+ In late 1995, Theo de Raadt forked it from NetBSD.
+ Besides the operating system as a whole, the project maintains portable versions of many subsystems, most notably OpenSSH,
+ which are available as packages in other operating systems.
+

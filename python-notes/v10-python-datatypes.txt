@@ -1,0 +1,61 @@
+ video 10 (2-8-2016)
+-------------------
+->for getting the longest word , use the command
+  wc -L combination with grep
+->sed ,awk,head ,tail
+->cron - a power unix utility
+  used for scheduling job. scheduling a job at a particular time.s
+-->lsb_release -a
+    this command will show the ubuntu version and relese and codename
+-->Md5 checksum:-
+   md5sum filename
+   it will generate the md5 checksum. use: to check the file is currupted or not-->swapon/swapoff
+  to create swap files. to enable and disable swap.swap is actually a file in which if the ram is full you can shift some files to the swap file to execute some other programes.
+
+python data types continues
+------------------------------
+-->In a staticalyy typed language the compiler has enough type information about to verify an operation is valid or not (eg in c)
+but in a dynamically typed language like python , the compiler has no valid info of type to verify a operation is valid or not and type information is available only at run time!.
+
+-->in the actual python implimentaion averything is written in c.
+    for every object there is a structure (struct) in the source code and one of the field of the structure is the type!
+--> when you write a=1 ,then                      [video time:35 min]
+    its creating a variable of type structre 
+    that is 
+        struct pyobj {
+          int type;
+          ......
+           ......
+          }
+                   
+            
+   a                        2000               [the address of the structre is 2000]
+  ------               -------------
+   2000                  type =INT            [INT is represented using a numerical value] 
+                 
+                          --------
+                              1                 [storing actual value 1 ,it should have enough memmory to hold                                                       the value , 4BYTES]
+                     
+                
+ that is the address of the structre is stored in a.
+
+-->the key idea is ; python creates a box that box has a type field which indicates what type of object is stored in that box  , at run time this type information is used to check whether a particular operation is valid or not this is the trick used by almost all dynamically typed languages.
+one of the reason behind the language is slow that of the multiple levels of pointer assignmnet
+
+--------------------------
+list
+----
+-->list slice operation using [:] , used to create copy of a list.
+--> 'is' operator is used to check if the two variables are same at the memmory level.
+--> id(variable) will return a unique number. unique represents that memory.
+--> idea of list inside list
+
+--> BASICALLY all variables  in python  are pointers.variables  get derefernced automatically.
+
+
+
+
+
+
+
+

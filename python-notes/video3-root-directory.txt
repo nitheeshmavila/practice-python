@@ -1,0 +1,9 @@
+video3-explaining the root directory
+-----------------------------------
+boot--contains machine code for the os kernal
+dev--special files...charactor special and block special files..
+null,zero 
+etc---configuration files..passwd...lib...
+.so(shared object)
+linux file system-ext4
+

@@ -1,0 +1,37 @@
+video14-(10-8-2016)
+------------------------------
+ searching in list
+---------------------
+-->by using 'in' operator;
+   it is a linear search, with time complexity O(n)
+   worst case: element is not present ,O(n)
+   average case: O(n)
+   if the element is the first element then, O(1)
+
+binary search
+-------------
+pre condition: sequence should be sorted
+in binary search , divide the array by half and check the middle element , if it the middle element is less than the element to be searched then we will again apply binary search in the upper part of the initial array, otherwise apply the binary searchh in the lower part of initial array.
+
+-->time complexity :O(log2 n)
+
+-->O(log n ) is almost good as O(1)
+-->O(log n)-logarithemic
+-->O(n)-Linear time
+--> O(1)-constant time
+-->O(n**2)-->quadratic 
+-->O(n**3)-->polynomial time
+-->O(a**n)--exponential time eg:all permutaions of a n-bit number.
+-------------------
+-->boolean satisfiability-to check a boolean equation
+--------------
+-->intractable-->practically feasible
+-->polynomial time --> tractable
+-----------------------------
+
+what is the most famous unsolved problem in computing?
+--> P==NP ?
+  there are many problems there solutions take exponetial amount of time. nobody has yet invented a polynomiyal solution for such problem.eg fibanocci
+
+
+ 

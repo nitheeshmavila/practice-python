@@ -1,0 +1,18 @@
+video 16 | week 6 | aug 16 2016
+-------------------------------
+memory manganement
+------------------
+--> in 'c' - manual memory management using 'malloc' and 'free'
+-->when you say that a memory is freed that means that block of memory is available to allocate again.
+--> garbage- the memory that is useless. you cant address that block of memory.
+-->memory leak- you are allocated a block of memory and you lost the pointer to that memory block so that you cant free that memmory block, it become garbage. memmory leak  is very hard to detect
+-->use after free bug in c
+    meaning is that you cant acces a memory block that is already freed.
+-->memory management in c is extreamly tricky and error prone.
+
+Managed languages
+----------------
+In managed language, memory management is the responsiblity virtual machine.allocations and deallocation are done by vm. memory related bugs are less in managed languages.
+ atomatic memory mangement
+---------------------------
+

@@ -1,0 +1,48 @@
+video 12 : (4-8-2016)
+--------------------
+list continues
+--------------
+--> [::-1] can be used to get reverse of a string
+-->sort() is an in place sort.
+-->sorted() will not change the original list.
+--> in operator to check membership
+
+--> list comprehensions
+    to perform some repetative task in python
+    first approch should be, can i  solve this using comprehesion if not think of 'for' loop , othe    r wise think of 'while'.
+--> the idea of comprehension is a powerful one , it is very common in functional languages like haskell
+
+--> list unpacking 
+
+--> zip()
+    it will take two list and combine and generate list of tuples.
+
+Tuple
+---------
+The key difference beetween a tuple and list :  tuple is immutable where as a list is mutable.
+eg: a=(1,2,3)
+    type(a)
+    tuple
+  a=(1)
+    type(a)
+    int 
+  a=(1,)
+    type(a)
+    tuple
+-->get(key)
+-->setdefaut(key,value) # if the key is not present it will add otherwise it will return the value of the key that is already in the dict.
+
+-->dict comprehension
+-->list unpacking
+    using *
+--> zip(*list)
+
+
+
+
+
+
+
+
+
+

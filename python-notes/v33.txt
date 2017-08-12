@@ -1,0 +1,65 @@
+video 33 | oct 5 2016
+---------------------
+--> decorators
+   ------------
+ @ syntax 
+
+a simple example of a decorator
+
+def print_msg(f):
+    def new_f():
+        print 'begining of function'
+        f()
+    return new_f
+
+@print_msg
+def fun2():
+    print 'fun2'
+
+the @print_msg is actually doing fun2 = print_msg(fun2)
+
+--> decorator syntax doesnot rreally add any new power to the language .
+it is a syntax sugar
+
+--> example:
+    profiling your programe.
+ function by function profiling
+ such as calculating the time taken to execute each function.
+
+
+def profile_it(f):
+    def new_f():
+        t1 = time()
+        f()
+        print time() - t1
+    return new_f
+
+@profile_it
+def fun1():
+    ...
+    ...
+
+
+-------------------
+--> pickle
+
+module for serialization
+
+the dump function in the pickle module will take two arguments one is a python datastructure and file , and just simple store the ds in to that file in disk.
+and you can reconstruct the ds in memory by using load function.
+
+
+application : distibuted processing, in case you need to transmit ds through a network
+----------------------
+    
+--> generators
+    ----------
+if a function has atleast one yield statement then the function is a generator function.
+
+when you calling such functions you get a generator object. 
+
+all generator object hasa method next().
+
+yield is a control flow mechanism
+------------------
+

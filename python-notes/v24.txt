@@ -1,0 +1,26 @@
+video24 | sep 6 2016
+---------------------
+simple networking programming
+-----------------------------
+-->ip address
+-->tcp/ip universal communication protocol
+-->ipv4(total : 4 bytes , first 3 byte network id, last byte host id)
+--> ipv6
+--> class a/b/c
+-->127.0.0.1 called loopback ip address (localhost) [ software interface]
+--> ip address are assigned to network interfaces(like software interface, ethernet interface, wifi interface)
+--> client - server programming
+--> tcp/ip implimented as code in 'c' present in the os kernel. [only the application layer is outside the kernel]
+
+--> A running on machine1, B running on machine2
+    A has got to identify B by using two values , that is 
+    IP address of machine2, port address/number
+--> Ip address is used to identify machines 
+    port number is a purely a logical quantity used to identify process.
+
+--> http server port 80
+    email on port 25
+--> most of the tricky things involved in n/w is done by the protocol code within the kernel.
+ 
+--> socket,bind,recvfrom, 
+

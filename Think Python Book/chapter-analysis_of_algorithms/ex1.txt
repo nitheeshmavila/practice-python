@@ -1,0 +1,32 @@
+
+Read about Big_O_notation and answer the following questions:
+--------------------------------------------------------
+1. What is the order of growth of n 3 + n 2 ? What about 1000000n 3 + n 2 ? What about
+n 3 + 1000000n 2 ?
+
+
+2. What is the order of growth of ( n 2 + n ) ⋅ (n + 1)? Before you start multiplying,
+remember that you only need the leading term.
+
+3. If f is in O(g), for some unspecified function g, what can we say about af+b?
+
+4. If f 1 and f 2 are in O(g), what can we say about f 1 + f 2 ?
+
+5. If f 1 is in O(g) and f 2 is in O(h), what can we say about f 1 + f 2 ?
+
+6. If f 1 is in O(g) and f 2 is O(h), what can we say about f 1 ⋅ f 2 ?
+
+
+
+Answers
+-------------------
+
+1. O(n^3)
+2. O(n^3)
+3. O(g)
+4. O(g)
+5. O(g+h)
+6. O(g.h)
+
+
+

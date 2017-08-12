@@ -1,0 +1,41 @@
+-->Most arithmetic operations are constant time; multiplication usually takes longer than
+  addition and subtraction, and division takes even longer, but these run times don’t de
+  pend on the magnitude of the operands. Very large integers are an exception; in that
+  case the run time increases with the number of digits.
+
+-->Indexing operations—reading or writing elements in a sequence or dictionary—are also
+constant time, regardless of the size of the data structure.
+
+-->A for loop that traverses a sequence or dictionary is usually linear, as long as all of the
+operations in the body of the loop are constant time
+
+-->The built-in function sum is also linear
+
+-->Most string and tuple operations are linear, except indexing and len , which are constant
+time. The built-in functions min and max are linear. The run-time of a slice operation is
+proportional to the length of the output, but independent of the size of the input.
+
+-->All string methods are linear, but if the lengths of the strings are bounded by a constant
+—for example, operations on single characters—they are considered constant time.
+
+-->Most list methods are linear, but there are some exceptions:
+    Adding an element to the end of a list is constant time
+    Removing an element from the end of a list is constant time.
+    Sorting is O(nlogn).
+
+
+
+-->Most dictionary operations and methods are constant time, but there are some excep
+tions:
+• The run time of copy is proportional to the number of elements, but not the size of
+the elements (it copies references, not the elements themselves).
+• The run time of update is proportional to the size of the dictionary passed as a
+parameter, not the dictionary being updated.
+• keys , values and items are linear because they return new lists; iterkeys , iter
+values and iteritems are constant time because they return iterators. But if you
+loop through the iterators, the loop will be linear. Using the “iter” functions saves
+some overhead, but it  doesn’t change the order of growth unless the number of items
+you access is bounded.
+
+
+

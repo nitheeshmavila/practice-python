@@ -1,0 +1,122 @@
+video 20 | aug 25 2016
+----------------------
+Scope cont...
+-------------
+-->
+x = 1
+
+def fun():
+    x = 2
+    print x
+
+fun()
+print x
+
+
+op: 
+2
+1
+
+
+local shadow glabals.
+
+
+-->if you want to change a global variable inside a function use the keyword 'global'
+eg
+    global x
+
+--> an assignment in python is more complex than in c.
+         a=1
+       this statement doing 2 things, creating a variable and assigning a value to it.
+--> When you writing 'global x' what is happening is python will not create a new binding x it will instead store 10 in the globally visible variable.
+
+--> from engineering prospective globals are bad idea
+
+
+
+-->
+x = 1
+
+def fun():
+    print x
+    x = 10
+    print x
+
+fun()
+print x
+
+
+# the above code will show unboundLocalError
+ python compiler will marks x as a local variable.
+ when the python vm runs the code it sees x as a local variable and when it run print x (first print) there is no value for x.becasue compiler marked x as a local variable.
+    here x is a kind of uninitialized local variable. For the virtual machine only way to terminate the programe is to generate a unboundLocalError
+
+-->in python there is possible to have nested functions and so nested scope.
+
+
+
+
+
+Functional Programing
+----------------------
+
+-->There are mainly 3 programing methodology/paradigms
+1)imperative programing--C,assembly
+2)object oriented---model the programe using classes and object -- objects will talk to each other by sending
+  messages through methods.
+3)functional programing--Lisp,scheme,haskell,ocaml
+    "you are writing code as pure functions and immutable data"
+     pure functions-->takes in some parameters,
+     performs computaions,return values.there is no side effects(any thing which you can not define computationaly.)
+
+
+"Python is a multi-paradigm language , it support all the above"
+ "but predominantly imperative and obj oriented and support functional programing"
+  python suuports fp to a certain limited extend
+
+"in FP Functions are "first class"--you can manipulate functions almost like normal variables.
+
+-->Two callable entity in python are functions and classes.
+
+-->higher order functions: a function that manipulates functions( takes functions as arguments or return fn)
+
+Map functions
+-----------
+takes a function and a list of values and apply the function to all values.
+it will work on any iterable and dict.
+
+-->ord()
+    it returns the ascii value
+prefer conprehension than map and filter
+
+
+Filter()
+---------
+it will take a function and values and return a new list of values that the function returns True.
+
+Reduce()
+-------
+taking a function and a list of values
+in    reduce(f,[x1,x2,x3...,xn]) what is happening is f(f(f(x1,x2),x3).......,xn)
+
+Map-reduce is made popular by google search algorithm.
+hadoop is a open source framework for big data processing.
+
+
+
+Anonymous functions or lambda
+-----------------------------
+function that does not have a name.
+lambda x,y :x+y
+f=lambda
+f(2,3)
+
+basic advantage is you can define a function in line.
+
+lambda calculas ,alonzo church
+
+---------------------------------------------------------------------------------------------------------
+    
+
+
+

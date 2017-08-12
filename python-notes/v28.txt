@@ -1,0 +1,9 @@
+Video 28 | sep 20 2016
+------------------------
+
+--> Class examples like  Counter, Rectangle, Complex 
+--> Inheritance --> is a relationship (need speacial syntax)
+--> Composition --> has a relationship (no speacial syntax)
+ 
+-->MRO(method resolution order)
+

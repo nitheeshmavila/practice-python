@@ -1,0 +1,50 @@
+video 10 : test discussion
+---------------------------
+-->donald knuth --the founder of the branch algorithm analysis (don of computer science) the author of the series of boooks the art of computer programming
+-->each feature of the cpu there is a specific flaag in the proc/cpuinfo  .eg lm flag stands for 64 bit cpu.
+-->To find out the kernal version --cat /proc/version or uname -a 
+-->what is the % disk space used by the root filesystem ,name of the device mounted on /
+    use the command 'df'
+-->use the free command to know the memmory info (swap and ram)
+--> to know the inode number of a file use 'ls -i'
+
+what is inode
+--------------
+inode number contains metadata regarding a file.
+inode is a on disk ds contains metadata.
+contains size,date,time,permissions,ownership,linkcount except its file name.
+name is actually stored in a ds called directory(it contains two informations of a file name and inode number)
+inode number is used to index a inode table it is array of inodes.each inode will have a fixed no of bytes in the case of the ext2 filesysytem 128 byte)
+the address of the data block assosiated with a file is in the inode table.
+-->stat filename also show the low level information of a file
+--> a directory(folder) is also a speacial file so it also has a inode number.
+use 'ls -ldi directory name' to get the inode number of a directory
+'ls -lai' shows inode number and details of every item in a directory incluing . and ..
+
+hard links : can be created by using 'ln f1 f2' in this case f1 and f2 has same inode number
+soft link(symbolic links) : use 'ln -s f1 f2' in this case f2 is link and f1 and f2 has different inode number
+--> you cant create a hard link to a directoy!! 
+because for os its very difficult to differntiate the original and link and also it will create loops in the filesystem hirearchy ( symboli link has no such problem because it is a special file ,os knows it is a link)
+link count(in the context of operating system or file sysytem)
+----------------------------------------------------------------
+
+for each file  there is a link count . it shows the no of names that the file can be accessed.
+while copying using 'ln f1 f2' it does not creates a new file called f2 ,it just give the same inode number that of f1 to f2. that namely 2 files but oly one disk entry.
+but using 'cp' command it creates a new file with a different inode number.
+
+when a file is remooved , os will free up the data block for that file (that is when you delete the file  the link count become zero)
+
+you try to create a new while it allocate the space that is the space of the just deleted .! that is why recovery is hard in linux( undeletion is very hard)
+
+link count /reference count( in the context of programing languages)
+-----------------------------------------
+memory management (both in ram and disk)
+
+---------------------------------------------------------------------------
+
+soft links:
+ the symbolic link has a  inode number ,in the inode it contains the block address of the data . and the core idea is in that block addrees it has the name of another file!!!!
+the os will interpret the data contained in that block address as the name of another file!
+
+
+

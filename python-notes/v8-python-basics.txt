@@ -1,0 +1,80 @@
+video8--python basics (27-7-2016)
+----------------------------------
+-->python is dynamically typed language
+-->dynamic typing (types are assigned during run time and may change)
+--> static typing(types are assigned at compile time and are static)
+-->rust,go uses static typing 
+-->type inference 
+-->Ml family :ocaml,haskell ...it has the idea of type inference(Hindly milner inferene) ..do not need to declare types compiler will infer types
+
+understanding the execution and compilation model of the language python
+-----------------------------------------------------------------------
+-->created a file called a.py
+-->when ruuning a python progamme 2 steps
+1.compilation--->a.py is converted in to a.pyc
+2.interpret and execute the a.pyc (python virtual machine)
+
+--> .pyc is called the "byte code" it is same as .class file in java.
+--> in python compilation and interpretation are done aby using a single programe called 'python"(in java it is done by two seperate programes javac and java)
+ 
+Byte code 
+---------
+-->byte code is a sequence of instructions which are designed for a virtual or imaginary CPU.
+--> most modern languages has a virtual imaginary cpu.
+-->the programe designers ,design a compiler that convert the code written in python to the imaginary instruction set of the imaginary cpu .
+-->core concept is "byte code by default it is not stored in disk it will be stored internally in some array and it will be executed. if you import it you get the byte code in the disk."
+virtual machine(vm)
+-------------------
+VM is a  programe  takes in instructions for the virtual/imaginary cpu and execute those instructions in a real CPU.
+
+python vm
+-------------
+after converting in to byte code , python vm will read the .pyc file. 
+the vm will 
+read_instructin
+a <- extract the op-code
+--> The core idea is you are transilating the registers in the byte code to  variables in a 'c' programe and the operations specified in the byte code file converted in to arithematic and logic operation in the c code.
+
+--> the core idea is python vm is a 'stack machine'
+in the stack machine all instructions are  take  from stack and results are also stored in stack.
+
+
+why is python slow?
+-----------------
+compared with c ,python is slow.
+-->The virtual machine transilation and interpretation has assosiated with lot of overhead.
+because all byte code operations are converted in to c code and again it is converted in to assembly code it hasa certain overhead. that is why it is slow.
+
+-->It is possible to have some optimizations .
+in java there is JIT (just in time transilations) an advanced technique.
+
+
+ Cpython
+---------
+classical python virtual machine written in c
+->it does not perform optimization
+jython 
+-------
+--VM CONVERTS PYTHON TO JAVA byte code then it can be executed by a java vm
+
+-----------------------
+import dis 
+dis -disassembly
+dis.dis(function)
+human readable form of a byte code instruction.
+
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

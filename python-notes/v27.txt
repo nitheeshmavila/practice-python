@@ -1,0 +1,32 @@
+Video 27 | sep 15 2016
+----------------------
+OO in python continues..
+
+--> reference semantics involved in class and object.
+
+--> if you just type the class name in interpreter it display the memory address of the class
+
+--> you can assign class name to a variable then the variable is also pointing to the same memmory location that the class is.
+
+-->unlike structure in C and class in C++ Python class is a  concrete entity not a abstract entity .
+
+--> python class will occupy space in memory but the structre declaration in C will not consume any memory.
+
+--> In C you can't pass a structure as an argument( but you can pass a structure variable) to a function but in Python you can pass a class as an argument to a function. and also return a class from a function.
+
+-->In Python Classes are first class entity. it has its own memory representation. 
+
+--> object representation in memory (12.00)
+ Each object has a unique memory representation.
+
+--> Can assign atributes to both classes and objects
+
+--> The atribute is basically a pointer and a class is a container for atributes.
+Memory rep at (21.00)
+
+--> attribute search mechanism [26.00]
+
+--> Class attribute and Object atributes
+--> class attributes are like global variable
+ 
+

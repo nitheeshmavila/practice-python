@@ -1,0 +1,28 @@
+video 25 | sep 7 2016
+---------------------
+
+Regular Expressions
+-------------------
+--> import re
+--> re.search
+--> ^ match at begining
+--> $ match at end
+--> row string -> r ( no special characters in row string)
+--> .(dot) matches any single character
+--> match object
+--> matchobject.group()
+--> +(one or more) and *(zero  or more)
+--> pattern matching is greedy( it will try to match as much as possible)
+--> no delayed gratification in pattern matching ( when it sees the first match it stops)
+--> \d matches digits
+--> grouping using () in patterns
+--> re.findall --> find out all occurance of the pattern
+
+--> Regular expressions are *very* tricky!
+
+Use them with caution.
+
+For very simple substring searching, don't use regexps, simply
+use "find" method on strings.
+
+

@@ -1,0 +1,58 @@
+video 18 | aug 23 2016
+-----------------------
+-->Python and all mnagaed languages(java,ruby etc) are memorsome contey safe.
+  very small chance for memory leaks, even though there is safe abstractions it is possible to have memory problems.
+
+--> Automatic memory management is mostly beneficial but in some context it will not work fine  in hard real time systems.
+  (in control systems, robotics, industrial automation etc)
+
+--> A very simple pointer assignment in python can trigger a chain of deallocations which can take variable amount of time, this will not happen in c.
+  in python there is no guarante that the pointer assignment will take fixed amount of time.
+
+--> computer graphics , games , animations etc in theese context 
+  it become to hard to use a language with garbage collector.
+
+--> algorithmic trading: in stock markets
+    automating the trading using algorithms
+    uses tuning java gc
+-->  java platform is entrenched in enterprise market.
+
+--> pygame --SDL-->libsdl
+
+--> one way to speed up python is, find out where your code is getting slow and replace the code with c or c++
+  using FFI(foriegn function interface) using with python code can call c/c++
+
+-->scipy , numpy
+    will work by interfacing to other languages like c/c++/fortran
+
+pylint
+---------
+-->to find some trivial mistakes in your code, mistakes which are not dictected by the python VM.  checks for style issues.
+ coding guidelines
+ code become readable only if you using a consistent style
+--> official style guide :PEP8
+
+import
+------
+import statement is importing a new name space in your programe.
+
+eg :
+    import math
+or another way to import is
+     from math import * # but it is a very bad thing to do because it will introduce name clashes.
+
+you ca use 
+    import math as m # you can use if the module name is long
+
+files
+-----
+#default mode of open is read
+f=open('a.txt')
+s= f.read()# will read the whole text as a single string. type(s) is string
+s=f.readline()# it read only one line as a string. type(s) is string
+s= f.readlines()# type(s) is list . s is a list of string(each line is a string)
+
+"The open file handler is iteratable this is a key concept!!"
+ you will get each line of the file in each iteration.
+
+

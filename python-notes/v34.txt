@@ -1,0 +1,26 @@
+video 34 | oct 7 2016
+---------------------
+generators continues..
+--------------------
+for k in c: #where c is an generator object
+    print k
+
+this for loop is exactly equal to 
+ while True:
+    try:
+        k = c.next()
+    except StopIteration:
+        break
+    print k
+
+--> close() method of generator object
+
+--> you can't realy have a infinite datastructure
+
+--> you can apply list() to a generator object.
+
+--> you can use generators to aoid intermediate storage of data.
+it has many applications in bigdata management.
+
+
+

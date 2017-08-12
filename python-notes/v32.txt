@@ -1,0 +1,26 @@
+video 32 | Oct 4 2016
+---------------------
+--> Exceptions
+    ----------
+--> all exceptions are modeled as classes
+
+--> user defined exceptions
+
+--> raise
+
+--> else and finaly  
+  else : will execute only if their is no exception
+  finally : will always execute
+
+-------------------------
+
+--> static method
+
+--> class method
+
+------------------------
+
+-->Decorators
+   ----------
+  
+
