@@ -1,11 +1,12 @@
 video8--python basics (27-7-2016)
 ----------------------------------
 -->python is dynamically typed language
--->dynamic typing (types are assigned during run time and may change)
---> static typing(types are assigned at compile time and are static)
--->rust,go uses static typing 
+-->dynamic typing (types are assigned during run time and may change)eg python
+--> static typing(types are assigned at compile time and are static)eg c , java
+--> there is one middile category "static typing with type inference" eg rust and go
+
 -->type inference 
--->Ml family :ocaml,haskell ...it has the idea of type inference(Hindly milner inferene) ..do not need to declare types compiler will infer types
+-->Ml family :ocaml,haskell ...it has the idea of type inference(Hindly milner inferene) ..do not need to declare types compiler will infer types.
 
 understanding the execution and compilation model of the language python
 -----------------------------------------------------------------------
