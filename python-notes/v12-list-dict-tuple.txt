@@ -3,14 +3,28 @@ video 12 : (4-8-2016)
 list continues
 --------------
 --> [::-1] can be used to get reverse of a string
+
+slicing
+-------
+[start_index:end_index:step]
+if start_index is not given it is 0
+if stop index is not given it is -1
+step is not given it is 1
+if stop index is given that index element is excluded from result
+if start index element is given that element is included in the resultant
+
+
 -->sort() is an in place sort.
 -->sorted() will not change the original list.
 --> in operator to check membership
 
 --> list comprehensions
     to perform some repetative task in python
-    first approch should be, can i  solve this using comprehesion if not think of 'for' loop , othe    r wise think of 'while'.
---> the idea of comprehension is a powerful one , it is very common in functional languages like haskell
+    first approch should be, can i  solve this using comprehesion if not think of 'for' loop , other wise think of 'while'.
+--> the idea of comprehension is a powerful one , it is very common in functional languages like
+--> if double comprehension is witten -
+     the first for loop will be the outer loop and the second one will be the inner loop
+
 
 --> list unpacking 
 
@@ -29,6 +43,11 @@ eg: a=(1,2,3)
   a=(1,)
     type(a)
     tuple
+    
+    
+dict
+--------
+any immutable objects can be used as keys , functions can also be used as keys
 -->get(key)
 -->setdefaut(key,value) # if the key is not present it will add otherwise it will return the value of the key that is already in the dict.
 
