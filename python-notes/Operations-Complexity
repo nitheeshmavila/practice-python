@@ -1,5 +1,6 @@
 		Complexity of Python Operations
 
+copy right : https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
 
 In this lecture we will learn the complexity classes of various operations on
 Python data types. Then we wil learn how to combine these complexity classes to
